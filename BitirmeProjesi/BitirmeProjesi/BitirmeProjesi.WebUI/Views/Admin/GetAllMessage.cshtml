@@ -1,0 +1,22 @@
+﻿@model List<Message>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-6">
+
+                <h3>Message</h3>
+                <p>@item.UserMessage</p>
+                <hr>
+                <h3>User</h3>
+                <p>@item.User.FirstName @item.User.LastName</p>
+                <p>Phone : @item.User.Phone </p>
+                <p>Email : @item.User.Email </p>
+            </div>
+
+
+        }
+    </div>
+</div>

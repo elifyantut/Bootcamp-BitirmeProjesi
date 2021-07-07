@@ -1,0 +1,52 @@
+﻿@model UserCreateViewModel
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-8">
+            <form asp-controller="Admin" asp-action="UpdateUser" method="post">
+                <div class="form-group">
+                    <label asp-for="FirstName" class="col-form-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="col-form-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="col-form-label"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TCNO" class="col-form-label"></label>
+                    <input asp-for="TCNO" class="form-control" />
+                    <span asp-validation-for="TCNO" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone" class="col-form-label"></label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="col-form-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CarPlate" class="col-form-label"></label>
+                    <input asp-for="CarPlate" class="form-control" />
+                    <span asp-validation-for="CarPlate" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <input type="submit" value="Update User" class="btn btn-primary" />
+                </div>
+                <input type="hidden" name="UserId" value="@ViewBag.UserId" />
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form asp-controller="User" asp-action="SendMessageToAdmin" method="POST">
+
+                <div class="form-floating">
+                    <label for="Message">  Message </label>
+                    <textarea class="form-control" name="Message" id="Message" cols="30" rows="10"></textarea>
+                    <br />
+                    <button class="btn btn-primary btn-lg" type="submit">Send</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

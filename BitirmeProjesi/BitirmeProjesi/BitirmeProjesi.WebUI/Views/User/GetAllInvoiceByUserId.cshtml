@@ -1,0 +1,26 @@
+﻿@model List<Apartment>
+
+    <div class="container">
+        @foreach (var apartment in Model)
+        {
+        <div class="row">
+            <div class="col-8">
+                <h1>Daire no : @apartment.Number</h1>
+                <h3>Daire sakini : @apartment.User.FirstName @apartment.User.LastName </h3>
+                @foreach (var invoice in apartment.Invoices)
+                {
+                    <h3> Ay : @invoice.Month </h3>
+                    <h4> Aidat : @invoice.Dues </h4>
+                    <h4> Elektrik : @invoice.ElectricityBill </h4>
+                    <h4> Doğalgaz : @invoice.GasBill </h4>
+                    <h4> Su : @invoice.WaterBill </h4>
+                    <a href="/User/PayBill/@invoice.Id" class="btn btn-primary"> pay bill </a> 
+                    <h4> InvoiceId : @invoice.Id </h4> 
+                    <hr />
+
+                }
+            </div>
+        </div>
+        }
+    
+    </div> 

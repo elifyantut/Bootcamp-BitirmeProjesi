@@ -1,0 +1,42 @@
+﻿@model InvoiceCreateViewModel
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-8">
+            <form asp-controller="Admin" asp-action="AddInvoiceToCircle" method="post">
+                <div class="form-group">
+                    <label asp-for="Dues" class="col-form-label"></label>
+                    <input asp-for="Dues" class="form-control" />
+                    <span asp-validation-for="Dues" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ElectricityBill" class="col-form-label"></label>
+                    <input asp-for="ElectricityBill" class="form-control" />
+                    <span asp-validation-for="ElectricityBill" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GasBill" class="col-form-label"></label>
+                    <input asp-for="GasBill" class="form-control" />
+                    <span asp-validation-for="GasBill" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="WaterBill" class="col-form-label"></label>
+                    <input asp-for="WaterBill" class="form-control" />
+                    <span asp-validation-for="WaterBill" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Month" class="col-form-label"></label>
+                    <input asp-for="Month" class="form-control" />
+                    <span asp-validation-for="Month" class="text-danger"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Create Invoice" class="btn btn-primary" />
+                </div>
+                <input type="hidden" name="CircleId" value="@ViewBag.CircleId" />
+            </form>
+        </div>
+
+    </div>
+</div>

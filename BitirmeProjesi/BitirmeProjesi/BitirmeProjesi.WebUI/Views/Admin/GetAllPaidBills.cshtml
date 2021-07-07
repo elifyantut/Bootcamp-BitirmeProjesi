@@ -1,0 +1,26 @@
+﻿@model List<PaidBills>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+
+        <div class="col-6">
+
+            <h3>Invoice</h3>
+            <p>Ödenen Tarih : @item.PaidDate </p>
+            <p> @item.Id</p>
+            <p>Fatura Ayı : @item.Month </p>
+            <p>Aidat : @item.Dues </p>
+            <p>Elektrik : @item.ElectricityBill </p>
+            <p>Gaz : @item.GasBill</p>
+            <p>Su : @item.WaterBill</p>
+            
+            <hr />
+            <p>Toplam Ödenen Para : @item.TotalBill</p>
+        </div>
+
+
+        }
+    </div>
+</div>

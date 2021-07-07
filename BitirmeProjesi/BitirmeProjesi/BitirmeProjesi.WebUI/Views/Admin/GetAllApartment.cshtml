@@ -1,0 +1,24 @@
+﻿@model List<Circle>
+
+<div class="container">
+
+    @foreach (var circle in Model)
+    {
+        <div class="row">
+            <div class="col-6">
+                <h3>Daire No: @circle.Number</h3>
+                <a href="/Admin/GetCircle/@circle.Id" class="btn btn-primary">Get Circle</a>
+                <a href="/Admin/UpdateCircle/@circle.Id" class="btn btn-primary">Update Circle</a>
+                <a href="/Admin/AddUserToCircle/@circle.Id" class="btn btn-primary">Add Or Update User To Circle</a>
+                <a href="/Admin/AddInvoiceToCircle/@circle.Id" class="btn btn-primary">Add Invoice To Circle</a>
+                <form action="/Admin/DeleteCircle" method="post">
+                    <input type="hidden" name="Id" value="@circle.Id" />
+                    <button type="submit" class="btn btn-danger">Delete Circle</button>
+                </form>
+            </div>
+
+        </div>
+    }
+
+
+</div>

@@ -1,0 +1,44 @@
+﻿@model ApartmentCreateViewModel
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-8">
+            <form asp-controller="Admin" asp-action="UpdateApartment" method="post">
+                <div class="form-group">
+                    <label asp-for="Block" class="col-form-label"></label>
+                    <input asp-for="Block" class="form-control" />
+                    <span asp-validation-for="Block" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="col-form-label"></label>
+                    <input asp-for="Status" class="form-control" />
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Type" class="col-form-label"></label>
+                    <input asp-for="Type" class="form-control" />
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Floor" class="col-form-label"></label>
+                    <input asp-for="Floor" class="form-control" />
+                    <span asp-validation-for="Floor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Number" class="col-form-label"></label>
+                    <input asp-for="Number" class="form-control" />
+                    <span asp-validation-for="Number" class="text-danger"></span>
+                </div>
+
+
+                <div>
+                    <input type="submit" value="Update Circle" class="btn btn-primary" />
+                </div>
+                <input type="hidden" name="ApartmentID" value="@ViewBag.ApartmentId" />
+            </form>
+        </div>
+
+    </div>
+</div>

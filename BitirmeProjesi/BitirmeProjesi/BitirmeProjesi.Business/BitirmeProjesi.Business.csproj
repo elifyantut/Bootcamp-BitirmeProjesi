@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BitirmeProjesi.CreditCardService\BitirmeProjesi.CreditCardService.csproj" />
+    <ProjectReference Include="..\BitirmeProjesi.Data\BitirmeProjesi.Data.csproj" />
+    <ProjectReference Include="..\BitirmeProjesi.Entity\BitirmeProjesi.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

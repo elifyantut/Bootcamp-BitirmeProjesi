@@ -1,0 +1,22 @@
+﻿@model List<UserViewModel>
+
+<div class="container">
+
+    @foreach (var user in Model)
+    {
+        <div class="row">
+            <div class="col-6">
+                <h3>@user.FirstName @user.LastName</h3>
+                <a href="/Admin/GetUserById/@user.Id" class="btn btn-primary">Get User</a>
+                <a href="/Admin/UpdateUser/@user.Id" class="btn btn-primary">Kullanıcıyı Güncelle</a>
+                <form action="/Admin/DeleteUser" method="post">
+                    <input type="hidden" name="Id" value="@user.Id" />
+                    <button type="submit" class="btn btn-danger">Kullanıcıyı Sil</button>
+                </form>
+            </div>
+
+        </div>
+    }
+
+
+</div> 
