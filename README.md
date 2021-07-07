@@ -17,3 +17,22 @@
 - Kendisine atanan fatura ve aidat bilgilerini görür.
 - Kredi kartı ile ödeme yapabilir.
 - Yöneticiye mesaj gönderebilir.
+
+#### Daire/Konut bilgilerinde
+- Hangi blokda
+- Durumu (Dolu-boş)
+- Tipi (2+1 vb.)
+- Bulunduğu kat
+- Daire numarası
+- Daire sahibi veya kiracı
+#### Kullanıcı bilgilerinde
+- Ad-soyad
+- TCNo
+- E-Mail
+- Telefon
+- Araç bilgisi(varsa plaka no)
+
+## Kullanılan Teknolojiler
+1. Web projesi için .Net 5 MVC
+2. Sistemin yönetimi/database için MS SQL Server
+3. Kredi kartı servisi için mongodb(verilerin tutulması için), .Net WebApi(Servis için).
