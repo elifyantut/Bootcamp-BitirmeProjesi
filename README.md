@@ -1,5 +1,9 @@
 # Bootcamp-BitirmeProjesi
 
+## Kullanılan Teknolojiler
+1. Web projesi için .Net 5 MVC
+2. Sistemin yönetimi/database için MS SQL Server
+3. Kredi kartı servisi için mongodb(verilerin tutulması için), .Net WebApi(Servis için).
 
 ### İki Tip Kullanıcımız Var
 
@@ -32,7 +36,3 @@
 - Telefon
 - Araç bilgisi(varsa plaka no)
 
-## Kullanılan Teknolojiler
-1. Web projesi için .Net 5 MVC
-2. Sistemin yönetimi/database için MS SQL Server
-3. Kredi kartı servisi için mongodb(verilerin tutulması için), .Net WebApi(Servis için).
